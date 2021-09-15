@@ -18,6 +18,11 @@ body {
   background-color: $very-light-gray;
 }
 
+img {
+  max-width: 100%;
+  display: inline-block;
+}
+
 :focus-visible {
   outline: .4em solid orange;
 }

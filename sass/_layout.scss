@@ -1,5 +1,24 @@
 body {
   padding: 1.6em;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em; /* for pixel-perfect alignment with the mockup */
+  
+  @media (min-width: $bp-large) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    min-height: 500px;
+    margin-top: 4.5em; /* for pixel-perfect alignment with the mockup */
+  }
 }
 
 
@@ -11,16 +30,36 @@ section {
   color: $transparent-white;
   background-color: var(--bg-color);
   max-width: 27em;
-  margin: 0 auto;
+
+  @media (min-width: $bp-large) {
+    max-width: 20.5em;
+  }
 }
 
-.flow > * + * {
-  margin-top: 1.7em;
+.flow {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 100%;
+
+  > * + * {
+    margin-top: 1.9rem;
+  }
+  
+  :last-child {
+    @media (min-width: $bp-large) {
+      margin-top: auto;
+    }
+  }
 }
 
 .section-one {
   --bg-color: #{$bright-orange};
   border-radius: $rounded-border $rounded-border 0 0;
+
+  @media (min-width: $bp-large) {
+    border-radius: $rounded-border 0 0 $rounded-border;
+  }
 }
 
 .section-two {
@@ -30,6 +69,10 @@ section {
 .section-three {
   --bg-color: #{$very-dark-cyan};
   border-radius: 0 0 $rounded-border $rounded-border;
+
+  @media (min-width: $bp-large) {
+    border-radius: 0 $rounded-border $rounded-border 0;
+  }
 }
 
 
@@ -39,8 +82,14 @@ section {
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin-top: 1em;
 
   a {
     color: hsl(228, 45%, 44%);
+
+    &:active,
+    &:hover {
+      text-decoration: none;
+    }
   }
 }

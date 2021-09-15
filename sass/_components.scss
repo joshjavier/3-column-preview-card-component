@@ -1,8 +1,16 @@
 .btn {
   display: inline-block;
-  padding: 1em 2.1em;
+  padding: .85em 2em;
   background-color: $very-light-gray;
   color: var(--bg-color);
   border-radius: 10em;
   text-decoration: none;
+  border: 2px solid $very-light-gray;
+  transition: background-color .1s;
+
+  &:active,
+  &:hover {
+    background-color: var(--bg-color);
+    color: $very-light-gray;
+  }
 }
