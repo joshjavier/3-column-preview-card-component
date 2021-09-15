@@ -1,0 +1,12 @@
+{
+  "name": "3-column-preview-card-component-main",
+  "version": "1.0.0",
+  "description": "A solution to the 3-column preview card component challenge on Frontend Mentor",
+  "scripts": {
+    "compile-sass": "sass sass/main.scss css/style.css --watch"
+  },
+  "author": "Josh Javier",
+  "devDependencies": {
+    "sass": "^1.40.1"
+  }
+}
