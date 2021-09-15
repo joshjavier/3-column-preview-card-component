@@ -1,0 +1,46 @@
+body {
+  padding: 1.6em;
+}
+
+
+
+// Card sections (or "columns" on wide viewports)
+
+section {
+  padding: 3.2em;
+  color: $transparent-white;
+  background-color: var(--bg-color);
+  max-width: 27em;
+  margin: 0 auto;
+}
+
+.flow > * + * {
+  margin-top: 1.7em;
+}
+
+.section-one {
+  --bg-color: #{$bright-orange};
+  border-radius: $rounded-border $rounded-border 0 0;
+}
+
+.section-two {
+  --bg-color: #{$dark-cyan};
+}
+
+.section-three {
+  --bg-color: #{$very-dark-cyan};
+  border-radius: 0 0 $rounded-border $rounded-border;
+}
+
+
+
+// Footer
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}

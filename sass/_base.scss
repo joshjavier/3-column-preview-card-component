@@ -1,0 +1,34 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+  
+html {
+  font-size: 15px;
+  font-family: 'Lexend Deca', sans-serif;
+  color: $dark-gray;
+
+  -webkit-text-size-adjust: 100%; /* Prevent weird font scaling in iPhone/iPad landscape mode */
+}
+
+body {
+  background-color: $very-light-gray;
+}
+
+:focus-visible {
+  outline: .4em solid orange;
+}
+
+h1 {
+  font-family: 'Big Shoulders Display', cursive;
+  text-transform: uppercase;
+  color: $very-light-gray;
+  font-size: 2.65rem;
+}
+
+p {
+  line-height: 1.65;
+}
