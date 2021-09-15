@@ -1,0 +1,145 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  color: #1a1a1a;
+  -webkit-text-size-adjust: 100%;
+  /* Prevent weird font scaling in iPhone/iPad landscape mode */
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+img {
+  max-width: 100%;
+  display: inline-block;
+}
+
+:focus-visible {
+  outline: 0.4em solid orange;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  color: #f2f2f2;
+  font-size: 2.65rem;
+}
+
+p {
+  line-height: 1.65;
+}
+
+body {
+  padding: 1.6em;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em;
+  /* for pixel-perfect alignment with the mockup */
+}
+@media (min-width: 1000px) {
+  main {
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    min-height: 500px;
+    margin-top: 4.5em;
+    /* for pixel-perfect alignment with the mockup */
+  }
+}
+
+section {
+  padding: 3.2em;
+  color: rgba(255, 255, 255, 0.75);
+  background-color: var(--bg-color);
+  max-width: 27em;
+}
+@media (min-width: 1000px) {
+  section {
+    max-width: 20.5em;
+  }
+}
+
+.flow {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 100%;
+}
+.flow > * + * {
+  margin-top: 1.9rem;
+}
+@media (min-width: 1000px) {
+  .flow :last-child {
+    margin-top: auto;
+  }
+}
+
+.section-one {
+  --bg-color: #e38826;
+  border-radius: 0.55em 0.55em 0 0;
+}
+@media (min-width: 1000px) {
+  .section-one {
+    border-radius: 0.55em 0 0 0.55em;
+  }
+}
+
+.section-two {
+  --bg-color: #006970;
+}
+
+.section-three {
+  --bg-color: #004241;
+  border-radius: 0 0 0.55em 0.55em;
+}
+@media (min-width: 1000px) {
+  .section-three {
+    border-radius: 0 0.55em 0.55em 0;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 1em;
+}
+.attribution a {
+  color: #3e52a3;
+}
+.attribution a:active, .attribution a:hover {
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.85em 2em;
+  background-color: #f2f2f2;
+  color: var(--bg-color);
+  border-radius: 10em;
+  text-decoration: none;
+  border: 2px solid #f2f2f2;
+  transition: background-color 0.1s;
+}
+.btn:active, .btn:hover {
+  background-color: var(--bg-color);
+  color: #f2f2f2;
+}
+
+/*# sourceMappingURL=style.css.map */
